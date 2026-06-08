@@ -1,0 +1,33 @@
+# Ignorar todo por defecto
+*
+
+# Trackear solo estos directorios
+!colors/
+!colors/**
+!fontconfig/
+!fontconfig/**
+!ghostty/
+!ghostty/**
+!hypr/
+!hypr/**
+!mpv
+!mpv/**
+!nvim/
+!nvim/**
+!ohmyposh/
+!ohmyposh/**
+!rofi/
+!rofi/**
+!scripts/
+!scripts/**
+!swaync/
+!swaync/**
+!waybar/
+!waybar/**
+!wlogout/
+!wlogout/**
+!yazi/
+!yazi/**
+!.gitignore
+!.stow-local-ignore
+!.zshrc
