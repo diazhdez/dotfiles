@@ -5,7 +5,7 @@
     "custom/power": {
         "format" : "⭘ ",
         "tooltip": false,
-        "on-click": "wlogout -b 5"
+        "on-click": "~/.config/scripts/powermenu.sh"
     },
 
     "hyprland/workspaces": {
@@ -20,7 +20,7 @@
         "format": " 󰂯 ",
         "format-disabled": " 󰂲 ",
         "format-connected": " 󰂱 ",
-        "on-click": "blueman-manager"
+        "on-click": "~/.config/scripts/bluetooth_menu.sh"
     },
 
     "network": {
@@ -29,7 +29,7 @@
         "format-linked": "  Linked (No IP)",
         "format-disconnected": "  Disconnected",
         "tooltip": false,
-        "on-click": "nm-connection-editor"
+        "on-click": "~/.config/scripts/wifi_menu.sh"
     },
 
     "pulseaudio": {

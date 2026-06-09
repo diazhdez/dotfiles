@@ -23,7 +23,7 @@ configuration {
     width:            600px;
 }
 #listview {
-    lines:        6;
+    lines:        5;
     fixed-height: 0;
     border:       0px;
     spacing:      2px ;

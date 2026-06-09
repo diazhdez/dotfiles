@@ -16,8 +16,6 @@ pacman_packages=(
 
   # ── Apps y utilidades ───────────────────────────────────────────────
   ghostty yazi loupe ffmpeg mpv qbittorrent 7zip
-
-  # ── Gaming ──────────────────────────────────────────────────────────
   steam gamescope vulkan-tools
 
   # ── Qt & Display Manager ────────────────────────────────────────────
@@ -31,12 +29,6 @@ pacman_packages=(
 )
 
 aur_packages=(
-  # ── Hyprland ────────────────────────────────────────────────────────
-  wlogout
-
-  # ── Sistema: red, bluetooth, audio ──────────────────────────────────
-  impala bluetui
-
   # ── Apps ────────────────────────────────────────────────────────────
   spotify zen-browser-bin onlyoffice-bin
 

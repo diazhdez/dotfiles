@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if pidof rofi > /dev/null; then
-    pkill rofi
+if pidof rofi >/dev/null; then
+  pkill rofi
 fi
 
-cliphist list | rofi -dmenu -p "Clipboard " -display-columns 2 | cliphist decode | wl-copy
+cliphist list | rofi -dmenu -i -p "Clipboard " -display-columns 2 -no-show-icons | cliphist decode | wl-copy

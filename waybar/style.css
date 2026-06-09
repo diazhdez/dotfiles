@@ -75,12 +75,12 @@ tooltip {
 }
 
 #pulseaudio {
-    color: #cba6f7;
+    color: #B8B8FF;
 }
 
 #clock {
     margin-right: 10px;
-    color: #B8B8FF;
+    color: #cba6f7;
 }
 
 #custom-power {
