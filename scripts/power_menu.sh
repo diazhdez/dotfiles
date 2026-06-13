@@ -5,7 +5,7 @@ if pidof rofi >/dev/null; then
 fi
 
 chosen=$(printf "Lock\nSuspend\nShutdown\nReboot\nLog Out" |
-  rofi -dmenu -i -no-show-icons -theme-str 'inputbar { enabled: false; }')
+  rofi -dmenu -i -p "Power " -no-show-icons)
 
 case "$chosen" in
 "Lock") hyprlock ;;

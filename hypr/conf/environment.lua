@@ -18,6 +18,7 @@ hl.env("QT_STYLE_OVERRIDE", "kvantum")
 hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
+hl.env("GTK_THEME", "adw-gtk3-dark")
 
 hl.config({
 	xwayland = {

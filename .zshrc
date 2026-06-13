@@ -1,5 +1,4 @@
 # ─── Meta ───────────────────────────────────────────────────────
-# Ensure running interactively
 [[ $- != *i* ]] && return
 
 # ─── History ─────────────────────────────────────────────────────
@@ -11,7 +10,6 @@ setopt sharehistory
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt hist_verify
-setopt CORRECT
 
 # ─── Keybinds ────────────────────────────────────────────────────
 bindkey -e
@@ -22,11 +20,17 @@ bindkey '^[[1;5D' backward-word
 eval "$(fzf --zsh)"
 
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=spinner:#F5E0DC,hl:#F38BA8 \
 --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
 --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
 --color=selected-bg:#45475A \
 --color=border:#313244,label:#CDD6F4"
+
+export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
+
+export BAT_THEME="base16"
 
 # ─── Zinit ───────────────────────────────────────────────────────
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -77,19 +81,13 @@ fi
 
 # ─── Aliases ─────────────────────────────────────────────────────
 alias ls='eza --icons --color=always'
-alias ll='eza --icons --color=always -l'
+alias ll='eza --icons --color=always -l --git'
 alias la='eza --icons --color=always -a'
-alias lla='eza --icons --color=always -la'
+alias lla='eza --icons --color=always -la --git'
 alias lt='eza --icons --color=always -a --tree --level=1'
-alias grep='grep --color=always'
+alias grep='rg --color=always'
+alias bat='bat --paging=never'
 
 # ─── Tools Init ──────────────────────────────────────────────────
-export BAT_THEME="base16"
-alias bat='bat --paging=never'
-alias cat='bat'
-
-# Setup zoxide
 eval "$(zoxide init zsh --cmd cd)"
-
-# Initialize Oh-My-Posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/usoj.omp.json)"

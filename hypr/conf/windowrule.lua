@@ -22,7 +22,6 @@ hl.window_rule({
 	no_focus = true,
 })
 
--- Wiremix popup (Waybar audio click)
 hl.window_rule({
 	match = {
 		class = "com\\.mitchellh\\.ghostty",

@@ -5,7 +5,7 @@
     "custom/power": {
         "format" : "⭘ ",
         "tooltip": false,
-        "on-click": "~/.config/scripts/powermenu.sh"
+        "on-click": "~/.config/scripts/power_menu.sh"
     },
 
     "hyprland/workspaces": {

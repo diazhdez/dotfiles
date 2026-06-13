@@ -1,84 +1,91 @@
 configuration {
-    scroll-method: 1;
-    scrollbar: false;
-    show-icons: true;
-    display-run: "Run ";
-    display-drun: "Open ";
-    drun-display-format: "{icon} {name}";
-    modi: "run,drun";
+    font: "monospace 13";
+    show-icons: false;
+    modi: "drun,run";
 }
-
-@import "~/.config/colors/colors.rasi"
 
 * {
-    font: "JetbrainsMono Nerd Font 15";
-}
+    bg: #1a1d15;
+    bg-alt: #292e21;
+    bg-soft: #3c4a30;
 
-#window {
-    background-color: rgba(0, 0, 0, 0.8);
-    border:           2;
-    border-radius:    2;
-    border-color:     @bordercolor;
-    padding:          15;
-    width:            600px;
-}
-#listview {
-    lines:        5;
-    fixed-height: 0;
-    border:       0px;
-    spacing:      2px ;
-    padding:      2px 0px 0px ;
-}
+    fg: #d2c6aa;
+    fg-bright: #f0e4c8;
+    fg-dim: #a69d87;
 
-#element {
-    border:        0;
-    border-radius: 8px;
-    padding:       3px;
-}
-#element.normal.normal {
+    green: #9aac6f;
+    edge: #565a45;
+
     background-color: transparent;
-    text-color:       @foreground;
+    text-color: @fg;
 }
-#element.alternate.normal {
+
+window {
+    width: 35%;
+    padding: 8px;
+    border: 2px;
+    border-color: @green;
+    background-color: @bg;
+}
+
+mainbox {
+    background-color: @bg;
+    spacing: 6px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @bg-alt;
+    padding: 6px;
+    border: 1px;
+    border-color: @edge;
+    children: [ entry ];
+}
+
+entry {
     background-color: transparent;
-    text-color:       @foreground;
-}
-#element.selected.normal {
-    background-color: @selected-background;
-    text-color:       @foreground;
-}
-element-text, element-icon {
-    size:             45px;
-    background-color: inherit;
-    text-color:       inherit;
+    text-color: @fg-bright;
+    placeholder: "search";
+    placeholder-color: @fg-dim;
 }
 
-#scrollbar {
-    width:        0px ;
-    border:       0;
-    handle-width: 0px ;
-    padding:      0;
+listview {
+    background-color: @bg;
+    lines: 5;
+    spacing: 3px;
+    scrollbar: true;
+    border: 0px;
 }
 
-#inputbar {
-    children:   [ prompt, textbox-prompt-colon, entry ];
-    spacing:       0;
-    padding:       15px;
-    border:        2px;
-    border-radius: 2px;
-    border-color:  @bordercolor;
+element {
+    background-color: @bg;
+    text-color: @fg;
+    padding: 4px 6px;
 }
-#prompt {
-    spacing:    0;
-    text-color: @foreground;
+
+element normal.normal,
+element alternate.normal {
+    background-color: @bg;
+    text-color: @fg;
 }
-#textbox-prompt-colon {
-    expand:     false;
-    str:        ">";
-    margin:     0px 0.3em 0em 0em ;
-    text-color: @foreground;
+
+element selected.normal {
+    background-color: @bg-soft;
+    text-color: @fg-bright;
 }
-#entry {
-    spacing:    0;
-    text-color: @foreground;
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: transparent;
+}
+
+scrollbar {
+    background-color: @bg;
+    handle-color: @bg-soft;
+    border: 0px;
+    width: 5px;
 }

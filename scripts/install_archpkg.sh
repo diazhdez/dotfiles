@@ -16,7 +16,7 @@ pacman_packages=(
 
   # ── Apps y utilidades ───────────────────────────────────────────────
   ghostty yazi loupe ffmpeg mpv qbittorrent 7zip
-  steam gamescope vulkan-tools
+  steam gamescope lib32-mesa lib32-vulkan-radeon
 
   # ── Qt & Display Manager ────────────────────────────────────────────
   sddm qt5ct qt6ct qt5-wayland qt6-wayland

@@ -83,7 +83,7 @@
 }
 
 trough highlight {
-    background: @wizard;
+    background: @darkgreen; #wizard
 }
 scale trough {
     margin: 0rem 1rem;
@@ -119,10 +119,10 @@ tooltip {
     background: @select;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
-    background: @wizard;
+    background: @darkgreen; #wizard
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
-    background: alpha(@wizard, 0.8);
+    background: alpha(@darkgreen, 0.8); #wizard
 }
 
 /* Mpris widget */
@@ -226,8 +226,6 @@ tooltip {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.65);
 }
 
-/* Scrollbar delgado */
 scrollbar {
    opacity: 0; 
 }
-

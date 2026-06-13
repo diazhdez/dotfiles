@@ -7,3 +7,8 @@ desc = "Enter the child directory, or open the file"
 on = "R"
 run = "rename --empty=stem --cursor=start"
 desc = "Rename removing the file stem"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "p" ]
+run = "cd ~/Pictures"
+desc = "Go ~/Pictures"

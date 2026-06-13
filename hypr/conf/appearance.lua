@@ -9,12 +9,12 @@
 
 hl.config({
     general = {
-        gaps_in           = 1,
-        gaps_out          = 2,
+        gaps_in           = 4,
+        gaps_out          = 8,
         border_size       = 2,
         col = {
-            active_border   = "rgba(cdd6f4aa)",
-            inactive_border = "rgba(595959aa)",
+            active_border   = "rgba(9aac6fff)",
+            inactive_border = "rgba(2f3327ff)",
         },
         resize_on_border  = true,
         allow_tearing     = false,

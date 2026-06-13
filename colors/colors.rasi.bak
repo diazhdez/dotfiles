@@ -1,17 +1,17 @@
 * {
-    background: #1a1d15;
-    foreground: #d6d0bd;
-    select: #4a4d3d;
+    background: #000000;
+    foreground: #d0dfee;
+    select: #585b70;
 
-    pink: #a4866a;
-    purple: #8a6f5a;
-    red: #9b5f50;
-    orange: #b59a62;
-    yellow: #d0b579;
-    green: #9aac6f;
-    darkgreen: #7f8f5a;
-    blue: #6f7f72;
-    gray: #3c4032;
+    pink: #f5c2e7;
+    purple: #B8B8FF;
+    red: #f38ba8;
+    orange: #fab387;
+    yellow: #f9e2af;
+    green: #a6e3a1;
+    blue: #89b4fa;
+    gray: #45475a;
+    wizard: #A056DC;
 
     active-background: @select;
     urgent-background: @red;

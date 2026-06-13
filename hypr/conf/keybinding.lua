@@ -9,7 +9,7 @@
 local mainMod = "SUPER"
 
 -- Session
-hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("~/.config/scripts/powermenu.sh"))
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("~/.config/scripts/power_menu.sh"))
 
 -- Apps
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("ghostty"))
