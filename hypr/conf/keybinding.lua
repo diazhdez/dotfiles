@@ -11,25 +11,24 @@ local mainMod = "SUPER"
 -- Session
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("~/.config/scripts/power_menu.sh"))
 
--- Apps
-hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("ghostty"))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("ghostty -e yazi"))
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("ghostty -e micro"))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("zen-browser"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("spotify"))
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("ghostty --title=wiremix -e wiremix"))
 
 -- Window management
-hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+
+-- Apps
+hl.bind(mainMod .. " + Backspace", hl.dsp.exec_cmd("ghostty"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("ghostty -e yazi"))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("ghostty --title=wiremix -e wiremix"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("zen-browser"))
 
 -- Utilities
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -o $HOME/Pictures/Screenshots"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/scripts/clipboard_launcher.sh"))
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("~/.config/scripts/wallpaper_select.sh"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/scripts/wifi_menu.sh"))
-hl.bind("ALT + Space", hl.dsp.exec_cmd("~/.config/scripts/app_launcher.sh"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/scripts/wallpaper_select.sh"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("~/.config/scripts/app_launcher.sh"))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("~/.config/scripts/wifi_menu.sh"))
 
 -- Focus
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))

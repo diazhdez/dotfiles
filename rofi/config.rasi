@@ -5,78 +5,76 @@ configuration {
 }
 
 * {
-    bg: #1a1d15;
-    bg-alt: #292e21;
-    bg-soft: #3c4a30;
+    bg:               rgba(0, 0, 0, 0.8);
+    bg-alt:           #22222e;
+    bg-soft:          #585b70;
 
-    fg: #d2c6aa;
-    fg-bright: #f0e4c8;
-    fg-dim: #a69d87;
+    fg:               #d0dfee;
+    fg-bright:        #e8f0ff;
+    fg-dim:           #7f8499;
 
-    green: #9aac6f;
-    edge: #565a45;
+    purple:           #B8B8FF;
+    edge:             #45475a;
 
     background-color: transparent;
-    text-color: @fg;
+    text-color:       @fg;
 }
 
 window {
-    width: 35%;
-    padding: 8px;
-    border: 2px;
-    border-color: @green;
+    width:            35%;
+    padding:          8px;
+    border:           2px;
+    border-color:     @purple;
     background-color: @bg;
 }
 
 mainbox {
-    background-color: @bg;
-    spacing: 6px;
-    children: [ inputbar, listview ];
+    background-color: transparent;
+    spacing:          6px;
+    children:         [ inputbar, listview ];
 }
 
 inputbar {
     background-color: @bg-alt;
-    padding: 6px;
-    border: 1px;
-    border-color: @edge;
-    children: [ entry ];
+    padding:          6px;
+    border:           1px;
+    border-color:     @edge;
+    children:         [ entry ];
 }
 
 entry {
-    background-color: transparent;
-    text-color: @fg-bright;
-    placeholder: "search";
+    background-color:  transparent;
+    text-color:        @fg-bright;
+    placeholder:       "search";
     placeholder-color: @fg-dim;
 }
 
 listview {
-    background-color: @bg;
-    lines: 5;
-    spacing: 3px;
-    scrollbar: true;
-    border: 0px;
+    lines:            5;
+    spacing:          3px;
+    scrollbar:        false;
+    border:           0px;
 }
 
 element {
-    background-color: @bg;
-    text-color: @fg;
-    padding: 4px 6px;
+    text-color:       @fg;
+    padding:          4px 6px;
 }
 
 element normal.normal,
 element alternate.normal {
-    background-color: @bg;
-    text-color: @fg;
+    background-color: transparent;
+    text-color:       @fg;
 }
 
 element selected.normal {
     background-color: @bg-soft;
-    text-color: @fg-bright;
+    text-color:       @fg-bright;
 }
 
 element-text {
     background-color: transparent;
-    text-color: inherit;
+    text-color:       inherit;
 }
 
 element-icon {
@@ -84,8 +82,8 @@ element-icon {
 }
 
 scrollbar {
-    background-color: @bg;
-    handle-color: @bg-soft;
-    border: 0px;
-    width: 5px;
+    background-color: transparent;
+    handle-color:     @bg-soft;
+    border:           0px;
+    width:            5px;
 }

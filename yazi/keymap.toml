@@ -12,3 +12,13 @@ desc = "Rename removing the file stem"
 on = [ "g", "p" ]
 run = "cd ~/Pictures"
 desc = "Go ~/Pictures"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "s" ]
+run = "cd ~/.config/scripts"
+desc = "Go ~/.config/scripts"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "f" ]
+run = "cd ~/.config/hypr/conf"
+desc = "Go to hyprland config"

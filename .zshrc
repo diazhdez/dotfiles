@@ -91,3 +91,4 @@ alias bat='bat --paging=never'
 # ─── Tools Init ──────────────────────────────────────────────────
 eval "$(zoxide init zsh --cmd cd)"
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/usoj.omp.json)"
+eval "$(fnm env --use-on-cd --shell zsh)"

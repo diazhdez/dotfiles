@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-        "closer": "#b59a62",
-        "path": "#d6d0bd",
-        "user": "#9aac6f"
+        "closer": "#D0DFEE",
+        "path": "#F5C2E7",
+        "user": "#B8B8FF"
   },
   "blocks": [
     {

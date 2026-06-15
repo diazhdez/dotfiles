@@ -83,7 +83,7 @@
 }
 
 trough highlight {
-    background: @darkgreen; #wizard
+    background: @wizard;
 }
 scale trough {
     margin: 0rem 1rem;
@@ -119,10 +119,10 @@ tooltip {
     background: @select;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
-    background: @darkgreen; #wizard
+    background: @wizard; 
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
-    background: alpha(@darkgreen, 0.8); #wizard
+    background: alpha(@wizard, 0.8);
 }
 
 /* Mpris widget */

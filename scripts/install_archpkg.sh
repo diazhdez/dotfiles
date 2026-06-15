@@ -19,10 +19,10 @@ pacman_packages=(
   steam gamescope lib32-mesa lib32-vulkan-radeon
 
   # ── Qt & Display Manager ────────────────────────────────────────────
-  sddm qt5ct qt6ct qt5-wayland qt6-wayland
+  greetd greetd-tuigreet qt5ct qt6ct qt5-wayland qt6-wayland
 
   # ── Fuentes ─────────────────────────────────────────────────────────
-  ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk ttf-dejavu
+  ttf-jetbrains-mono-nerd ttf-dejavu noto-fonts noto-fonts-cjk 
 
   # ── Temas, apariencia y misceláneo ──────────────────────────────────
   adw-gtk-theme kvantum-qt5 cliphist nwg-look
@@ -30,17 +30,14 @@ pacman_packages=(
 
 aur_packages=(
   # ── Apps ────────────────────────────────────────────────────────────
-  spotify zen-browser-bin onlyoffice-bin
-
-  # ── Fuentes Windows ─────────────────────────────────────────────────
-  ttf-segoe-ui-variable ttf-ms-fonts ttf-vista-fonts
+  zen-browser-bin
 
   # ── Temas e íconos ──────────────────────────────────────────────────
-  sddm-astronaut-theme apple_cursor whitesur-icon-theme
+  apple_cursor
 )
 
 echo "==> Installing pacman packages..."
 sudo pacman -S --noconfirm --needed "${pacman_packages[@]}"
 
 echo "==> Installing AUR packages..."
-yay -S --noconfirm "${aur_packages[@]}"
+paru -S --noconfirm --skipreview "${aur_packages[@]}"

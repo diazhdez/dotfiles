@@ -1,8 +1,8 @@
 font-family = JetBrainsMono Nerd Font
 font-size = 13
 
-theme = earth-olive
-background-opacity = 1.0
+theme = electric-wizard
+background-opacity = 0.8
 window-padding-y = 8
 
 keybind = ctrl+shift+v=ignore

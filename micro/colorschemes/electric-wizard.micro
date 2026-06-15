@@ -1,0 +1,34 @@
+# base
+color-link default "#d0dfee,default"
+color-link identifier "#d0dfee"
+color-link underlined "#d0dfee"
+
+# syntax
+color-link comment "#7f8499"
+color-link statement "#B8B8FF"
+color-link type "#9898e8"
+color-link symbol "#a8b8e0"
+color-link constant "#c0c8f8"
+color-link constant.string "#c8d4ff"
+color-link preproc "#8890b8"
+color-link special "#d0b8ff"
+
+# diagnostics
+color-link error "#f38ba8"
+color-link todo "#c8d4ff"
+color-link gutter-error "#f38ba8,#1a1a26"
+color-link gutter-warning "#B8B8FF,#1a1a26"
+
+# ui
+color-link statusline "#d0dfee,#22222e"
+color-link tabbar "#7f8499,default"
+color-link indent-char "#2a2a38"
+color-link line-number "#7f8499,default"
+color-link current-line-number "#e8f0ff,#585b70"
+
+# extras
+color-link selection "#d0dfee,#585b70"
+color-link search-result "#1a1a26,#B8B8FF"
+color-link diff-added "#c8d4ff"
+color-link diff-removed "#f38ba8"
+color-link diff-modified "#9898e8"
